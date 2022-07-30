@@ -10,7 +10,6 @@ export default class Interpreter {
 
     execute() {
         for (let element of this.elements) {
-            console.log(element);
             if (element.checkType === "loop") {
                 for (let i = 0; i < element.count; i++) {
                     for (let operation of element.operations) {
